@@ -69,6 +69,8 @@ h6 {
 .container {
     width: 130rem;
     margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 :root {
@@ -97,33 +99,28 @@ h6 {
     justify-content: space-between;
 }
 
-.header__menu {
-    display: flex;
-    align-items: center;
-}
-
 .header__logo {
     display: block;
     width: 4rem;
     height: 4rem;
 }
 
+.header__nav {
+    font-size: var(--text-size-medium);
+    line-height: 1.5;
+}
+
+.header__nav a:not(:last-child) {
+    margin-right: 7.1rem;
+}
+
 .header__button {
-    margin-left: 55.3rem;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
     font-size: var(--text-size-medium);
     line-height: 1.5;
 }
 
-.header__nav a:not(:last-child){
-    margin-right: 7.1rem;
-}
-
-.header__nav a {
-    font-size: var(--text-size-medium);
-    line-height: 1.5;
-}
-
+/******************************/
 .main-display__background {
     position: absolute;
     top: 0;
@@ -213,6 +210,11 @@ h6 {
     line-height: 1.4;
 }
 
+.work__description {
+    font-size: var(--text-size-medium);
+    line-height: 1.6
+}
+
 .process {
     padding-bottom: 20rem;
 }
@@ -261,7 +263,9 @@ h6 {
 }
 
 .process__item {
+    border: 1px solid red;
     max-width: 30.6rem;
+    width: 25%;
 }
 
 .process__work {
